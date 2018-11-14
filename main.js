@@ -2,8 +2,8 @@
 		"use strict";
 		var NUM_SAMPLES = 256;
         //tracks to be used
-		var SOUND_1 = 'media/Better.mp3';
-        var SOUND_2='media/Toxic.m4a';
+		var SOUND_1 = 'media/Phillip_Gross_-_01_-_Casablanca.mp3';
+        var SOUND_2='media/A_A_Aalto_-_Lantern_Music.mp3';
         //audio 
 		var audioElement;
 		var analyserNode;
