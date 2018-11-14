@@ -1,0 +1,42 @@
+	body {
+        background: #eeeeee;
+        font-family: 'Cabin', sans-serif;
+        background-image: url('http://res.cloudinary.com/culturemap-com/image/upload/q_auto/ar_4:3,c_fill,g_faces:center,w_1200/v1524661707/photos/273748_original.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    h1,h3{
+        font-family: 'Rock Salt', cursive;
+        text-align: center;
+    }
+        body{
+           display: flex;
+           flex-direction: column;
+        }
+     canvas {
+      position: absolute;
+      top:0;
+      bottom:0;
+      left:50%;
+      transform: translateX(-50%);
+    }
+        #wrapper canvas{
+        padding-left:0;
+        padding-right:0;
+        margin-top:10px;
+        box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+        }
+        #wrapper {
+            position: relative;
+        }
+      #controls{
+        display: table;
+        padding:20px;
+        border-radius:5px;
+        margin: 5px auto;
+        margin-top: 29em;
+        box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+        background-image:url('britney_0.jpg');
+        background-position: center;
+      }

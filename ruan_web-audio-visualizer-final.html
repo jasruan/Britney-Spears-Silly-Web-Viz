@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Britney Spears : Web Audio Visualizer</title>
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="stylesheet" href="images/styles.css">
+	<script type="text/javascript" src="main.js">
+	</script>
+</head>
+<body>
+    <h1>A Britney Spears Mini Shrine</h1>
+    <h3>Created by a fan girl!</h3>
+    <div id="wrapper">
+     <canvas id="bottomCanvas" width=640 height=400></canvas>
+	<canvas id="mainCanvas" width=640 height=400></canvas>
+    </div>
+	<div id="controls">
+		<audio controls loop></audio>
+		<label>Track: 
+			<select id="trackSelect" >
+				<option selected value="media/Better.mp3">Better</option>
+                <option value="media/Toxic.m4a">Toxic</option>
+			</select>
+		</label>
+		<button id="fsButton">Go Full Screen</button><br>
+		<p id="status">???</p>
+        <label>Circle Radius: 
+    <input id="slider" type="range" min="1" max="10" value="5" step="1"/>
+    </label>
+        <label>Heart Size:
+        <input id="heartSlider" type="range" min="1" max="10" value="5" step="1"/>
+        </label>
+    <br>
+    <label>Delay/Reverb:
+        <input id="delaySlider" type="range" min="0.0" max="1.0" value="0" step="0.1">
+    </label>
+    <label>Display Data
+        <select id="dataDisplay">
+       <option value="waveform">Waveform</option>
+        <option value="frequency">Frequency</option>
+        </select>
+    </label>
+    <br>
+    <label>
+        Effects:
+        <label><input type="checkbox" id="tintRed">Tint Red</label>
+        <label><input type="checkbox" id="noise">Noise</label>
+        <label><input type="checkbox" id="invert">Invert</label>
+        <label><input type="checkbox" id="lines">Lines</label>
+        <label><input type="checkbox" id="grayScale">Grayscale</label>
+    </label>
+    <br>
+    <label>Shapes to Draw: 
+			<select id="shapes" >
+				<option  value="circles">Circles</option>
+				<option value="stars">Stars</option>
+                <option value="curves">Curves</option>
+			</select>
+		</label>
+	</div>
+</body>
+</html>
